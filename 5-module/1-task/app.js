@@ -6,7 +6,6 @@ app.use(require('koa-bodyparser')());
 
 const Router = require('koa-router');
 const router = new Router();
-
 const clients = new Set();
 
 router.get('/subscribe', async (ctx, next) => {
